@@ -76,7 +76,7 @@ const SensorScreen = () => {
   return (
     <ScrollView style={styles.wadahUtama} contentContainerStyle={styles.kontenScroll}>
 
-      <Text style={styles.judul}>📡 Detail Sensor Tanah</Text>
+      <Text style={styles.judul}>Detail Sensor Tanah</Text>
       <Text style={styles.subjudul}>
         18 sensor kelembaban • 3 zona • {dataSensor?.rataRataTotal?.toFixed(1) || 0}% rata-rata
       </Text>

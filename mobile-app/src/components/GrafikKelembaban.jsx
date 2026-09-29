@@ -86,7 +86,7 @@ const GrafikKelembaban = ({ rataRataDepan, rataRataTengah, rataRataBelakang }) =
   return (
     <Card style={styles.kartuGrafik}>
       <Card.Content>
-        <Text style={styles.judulGrafik}>📊 Kelembaban Real-time</Text>
+        <Text style={styles.judulGrafik}>Kelembaban Real-time</Text>
 
         <LineChart
           data={dataGrafik}

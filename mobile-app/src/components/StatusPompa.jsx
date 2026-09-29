@@ -70,11 +70,11 @@ const StatusPompa = ({
           },
         ]}
       >
-        <Text style={styles.ikonPompa}>{pompaHidup ? '💧' : '⏸'}</Text>
+        <Text style={styles.ikonPompa}>{pompaHidup ? '=' : '⏸'}</Text>
       </Animated.View>
 
       <Text style={[styles.statusUtama, { color: warnaUtama }]}>
-        {pompaHidup ? 'POMPA AKTIF' : 'POMPA MATI'}
+        {pompaHidup ? 'Pompa aktif' : 'Pompa mati'}
       </Text>
 
       {cooldownAktif && !pompaHidup && (

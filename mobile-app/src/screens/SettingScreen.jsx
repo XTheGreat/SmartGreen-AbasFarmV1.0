@@ -63,10 +63,10 @@ const SettingScreen = () => {
         waktuSiramMaksimal: waktuMaks,
       });
       setAdaPerubahan(false);
-      setPesanSnackbar('✅ Setting berhasil disimpan ke Firebase!');
+      setPesanSnackbar('Setting berhasil disimpan ke Firebase!');
       setTampilSnackbar(true);
     } catch (error) {
-      setPesanSnackbar('❌ Gagal menyimpan: ' + error.message);
+      setPesanSnackbar('Gagal menyimpan: ' + error.message);
       setTampilSnackbar(true);
     } finally {
       setSedangSimpan(false);
@@ -97,7 +97,7 @@ const SettingScreen = () => {
     <View style={styles.wadahUtama}>
       <ScrollView contentContainerStyle={styles.kontenScroll}>
 
-        <Text style={styles.judul}>⚙️ Pengaturan</Text>
+        <Text style={styles.judul}>Pengaturan</Text>
         <Text style={styles.subjudul}>
           Konfigurasi threshold penyiraman otomatis
         </Text>
@@ -300,7 +300,7 @@ const SettingScreen = () => {
 
         <Card style={styles.kartuInfo}>
           <Card.Content>
-            <Text style={styles.judulInfo}>ℹ️ Cara Kerja</Text>
+            <Text style={styles.judulInfo}>ℹCara Kerja</Text>
             <Text style={styles.teksInfo}>
               • Kelembaban &lt; {Math.round(batasKeringTanah)}% → Pompa nyala otomatis{'\n'}
               • Kelembaban {Math.round(batasKeringTanah)}–{Math.round(batasBasahTanah)}% → Pertahankan status{'\n'}
